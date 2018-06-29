@@ -151,53 +151,73 @@
     </div>
   </section>
 
-  <!-- PHOTO GALLARY SECTION -->
-  <section id="gallary" class="py-5">
+  <!-- PHOTO GALLERY SECTION -->
+  <section id="gallery" class="py-5">
     <div class="container">
-      <h1 class="text-center">Photo Gallary</h1>
+      <h1 class="text-center">Photo Gallery</h1>
       <p class="text-center">Check out our photos</p>
       <div class="row mb-4">
         <div class="col-md-4">
-          <a href="https://source.unsplash.com/random/560x560" data-toggle="lightbox" data-gallary="img-gallary" data-height="560"
-            data-width="560">
-            <img src="https://source.unsplash.com/random/560x560" alt="" class="img-fluid">
+          <a href="img/gallery1.jpeg" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+            <img src="img/gallery1.jpeg" alt="" class="img-fluid">
           </a>
         </div>
         <div class="col-md-4">
-          <a href="https://source.unsplash.com/random//560x560" data-toggle="lightbox" data-gallary="img-gallary" data-height="560"
-            data-width="560">
-            <img src="https://source.unsplash.com/random//560x560" alt="" class="img-fluid">
+          <a href="img/gallery2.jpeg" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+            <img src="img/gallery2.jpeg" alt="" class="img-fluid">
           </a>
         </div>
         <div class="col-md-4">
-          <a href="https://source.unsplash.com/random//560x560" data-toggle="lightbox" data-gallary="img-gallary" data-height="560"
-            data-width="560">
-            <img src="https://source.unsplash.com/random//560x560" alt="" class="img-fluid">
+          <a href="img/gallery3.jpeg" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+            <img src="img/gallery3.jpeg" alt="" class="img-fluid">
           </a>
         </div>
       </div>
       <div class="row mb-4">
         <div class="col-md-4">
-          <a href="https://source.unsplash.com/random//560x560" data-toggle="lightbox" data-gallary="img-gallary" data-height="560"
-            data-width="560">
-            <img src="https://source.unsplash.com/random//560x560" alt="" class="img-fluid">
+          <a href="img/gallery4.jpeg" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+            <img src="img/gallery4.jpeg" alt="" class="img-fluid">
           </a>
         </div>
         <div class="col-md-4">
-          <a href="https://source.unsplash.com/random//560x560" data-toggle="lightbox" data-gallary="img-gallary" data-height="560"
-            data-width="560">
-            <img src="https://source.unsplash.com/random//560x560" alt="" class="img-fluid">
+          <a href="img/gallery5.jpeg" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+            <img src="img/gallery5.jpeg" alt="" class="img-fluid">
           </a>
         </div>
         <div class="col-md-4">
-          <a href="https://source.unsplash.com/random//560x560" data-toggle="lightbox" data-gallary="img-gallary" data-height="560"
-            data-width="560">
-            <img src="https://source.unsplash.com/random//560x560" alt="" class="img-fluid">
+          <a href="img/gallery6.jpeg" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+            <img src="img/gallery6.jpeg" alt="" class="img-fluid">
           </a>
         </div>
       </div>
     </div>
   </section>
+
+  <!--NEWS LETTER SECTION -->
+  <section id="newsletter" class="text-center p-5 bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Sign Up For Our Newsletter</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum rerum assumenda eum fugiat adipisci nobis dolorem
+            suscipit animi quam possimus.</p>
+          <form class="form-inline justify-content-center">
+            <input type="text" class="form-control mr-2" placeholder="Name">
+            <input type="email" class="form-control mr-2" placeholder="Email">
+            <input type="submit" class="form-control btn btn-primary" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container py-4">
+      Copyright &copy
+      <span id="year"></span> Glozzom
+    </div>
+  </footer>
 
   <!-- VIDEO PLAY MODAL -->
   <div class="modal fade" id="videoModal">
@@ -231,9 +251,12 @@
     });
 
     // Light Box
+
     $(document).on('click', '[data-toggle="lightbox"]', function (event) {
       event.preventDefault();
-      $(this).ekkoLightbox();
+      $(this).ekkoLightbox({
+        alwaysShowClose: true
+      });
     });
 
     // Video Play

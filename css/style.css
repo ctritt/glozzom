@@ -42,6 +42,11 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.7); }
 
+footer {
+  background: black;
+  text-align: center;
+  color: white; }
+
 /* Small devices (landscape phones, 576px and up) */
 /* Medium devices (tablets, 768px and up) */
 /* Large devices (desktops, 992px and up) */
