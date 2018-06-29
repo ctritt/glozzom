@@ -25,6 +25,15 @@
   text-align: center;
   color: white; }
 
+#video-play {
+  position: relative;
+  min-height: 200px;
+  background: url(../img/media.jpg) no-repeat fixed 0 -300px;
+  text-align: center;
+  color: white; }
+  #video-play a {
+    color: white; }
+
 .dark-overlay {
   position: absolute;
   top: 0;
