@@ -94,58 +94,90 @@
           </div>
         </div>
         <div class="col-md-4">
-            <div class="card bg-dark text-center text-white">
-                <div class="card-body">
-                  <i class="fas fa-bullhorn fa-3x"></i>
-                  <h3>Lorem Ipsum</h3>
-                  <div class="card-te">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, temporibus.</div>
-                </div>
-              </div>
+          <div class="card bg-dark text-center text-white">
+            <div class="card-body">
+              <i class="fas fa-bullhorn fa-3x"></i>
+              <h3>Lorem Ipsum</h3>
+              <div class="card-te">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, temporibus.</div>
+            </div>
+          </div>
         </div>
         <div class="col-md-4">
-            <div class="card bg-danger text-center text-white">
-                <div class="card-body">
-                  <i class="fas fa-comments fa-3x"></i>
-                  <h3>Lorem Ipsum</h3>
-                  <div class="card-te">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, temporibus.</div>
-                </div>
-              </div>
+          <div class="card bg-danger text-center text-white">
+            <div class="card-body">
+              <i class="fas fa-comments fa-3x"></i>
+              <h3>Lorem Ipsum</h3>
+              <div class="card-te">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, temporibus.</div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="row">
-          <div class="col-md-4">
-              <div class="card bg-dark text-center text-white">
-                  <div class="card-body">
-                    <i class="fas fa-box fa-3x"></i>
-                    <h3>Lorem Ipsum</h3>
-                    <div class="card-te">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, temporibus.</div>
-                  </div>
-                </div>
-          </div>
-          <div class="col-md-4">
-              <div class="card bg-danger text-center text-white">
-                  <div class="card-body">
-                    <i class="fas fa-credit-card fa-3x"></i>
-                    <h3>Lorem Ipsum</h3>
-                    <div class="card-te">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, temporibus.</div>
-                  </div>
-                </div>
-          </div>
-          <div class="col-md-4">
-              <div class="card bg-dark text-center text-white">
-                  <div class="card-body">
-                    <i class="fas fa-coffee fa-3x"></i>
-                    <h3>Lorem Ipsum</h3>
-                    <div class="card-te">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, temporibus.</div>
-                  </div>
-                </div>
+        <div class="col-md-4">
+          <div class="card bg-dark text-center text-white">
+            <div class="card-body">
+              <i class="fas fa-box fa-3x"></i>
+              <h3>Lorem Ipsum</h3>
+              <div class="card-te">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, temporibus.</div>
+            </div>
           </div>
         </div>
+        <div class="col-md-4">
+          <div class="card bg-danger text-center text-white">
+            <div class="card-body">
+              <i class="fas fa-credit-card fa-3x"></i>
+              <h3>Lorem Ipsum</h3>
+              <div class="card-te">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, temporibus.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-dark text-center text-white">
+            <div class="card-body">
+              <i class="fas fa-coffee fa-3x"></i>
+              <h3>Lorem Ipsum</h3>
+              <div class="card-te">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, temporibus.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--TESTIMONAL SECTION -->
+  <section id="testimonials" class="p-4 bg-dark text-center text-white">
+    <div class="container">
+      <h1>testimonials</h1>
+      <div class="row">
+        <div class="col">
+          <!-- Using Slick Slider -->
+          <div class="slider">
+            <blockquote class="blockquote">
+              <p class="mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, asperiores?</p>
+              <footer class="blockquote-footer">John Doe From
+                <cite>Company 1</cite>
+              </footer>
+            </blockquote>
+            <blockquote class="blockquote">
+              <p class="mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, asperiores?</p>
+              <footer class="blockquote-footer">Karen Smith From
+                <cite>Company 2</cite>
+              </footer>
+            </blockquote>
+            <blockquote class="blockquote">
+              <p class="mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, asperiores?</p>
+              <footer class="blockquote-footer">Alex Hadley From
+                <cite>Company 3</cite>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer>
+  <footer id="site-footer">
     <div class="container py-4">
       Copyright &copy
       <span id="year"></span> Glozzom
@@ -166,6 +198,9 @@
     if (document.querySelector('.navbar').classList.contains('fixed-top')) {
       document.body.style.marginTop = `${navHeight}px`;
     }
+    
+    // Slick Slider Init
+    $('.slider').slick();
 
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());
