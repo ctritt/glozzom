@@ -4,7 +4,7 @@
   }
 
   .nav-item {
-    padding: 0 1rem 0 1rem; 
+    padding: 0 1rem 0 1rem;
   }
 
   .nav-item.active {
@@ -72,6 +72,22 @@
 #about {
   .about-img {
     margin-top: -50px;
+  }
+}
+
+#faq {
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .card {
+    border: #444;
+  }
+
+  .card-header,
+  .card-body {
+    background: #333;
   }
 }
 
